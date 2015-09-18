@@ -1,21 +1,21 @@
 {
   "name": "dead-simple-event-bus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dead simple implmentation of event bus",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/scriptnull/dead-simple-event-bus.git"
-  } ,
+  },
   "keywords": [
     "event",
     "bus"
   ],
   "author": "Vishnu Bharathi <vishnubharathi04@gmail.com> (https://twitter.com/scriptnull)",
-  "license": "GPL-3.0" ,
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/scriptnull/dead-simple-event-bus/issues"
   },
