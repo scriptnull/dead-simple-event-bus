@@ -57,3 +57,18 @@ ebArrayStyle.add('a' ,[ function(a , b ){ console.log(a + ' ' + b ); } , functio
 ebArrayStyle.trigger('a' , [ 1 , 2 ]);
 ebArrayStyle.remove('a' , [ function(a , b ){ console.log(a + ' ' + b ); } , function(a , b ){ console.log( b + ' ' + a  ); }]);
 ```
+
+### Duplicate functions
+__dead-simple-event-bus__ optimizes the event bus by not allowing more than one copy of function to be added.
+
+```javascript 
+ebSingle.add('a' , function(a , b ){ console.log(a + ' ' + b ); }); // assigns event 
+ebSingle.add('a' , function(a , b ){ console.log(a + ' ' + b ); }); // avoids assignng and prints message
+```
+By default , duplicate functions print a message to console and doesn't get addedup again on the event bus. If you want to handle this manually , you could dig a bit into the source and insert a callback. 
+
+### Contribution 
+More than welcomed !
+
+### License
+![](https://raw.githubusercontent.com/scriptnull/bagpack/master/GPL.png)
